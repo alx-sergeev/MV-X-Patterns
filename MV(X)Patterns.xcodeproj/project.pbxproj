@@ -14,6 +14,7 @@
 		3FFEED92278C06D40014671F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FFEED91278C06D40014671F /* Assets.xcassets */; };
 		3FFEED95278C06D40014671F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFEED93278C06D40014671F /* LaunchScreen.storyboard */; };
 		3FFEED9D278C09D30014671F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEED9C278C09D30014671F /* Person.swift */; };
+		3FFEED9F278C1FEB0014671F /* GreetingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEED9E278C1FEB0014671F /* GreetingPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3FFEED94278C06D40014671F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FFEED96278C06D40014671F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FFEED9C278C09D30014671F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3FFEED9E278C1FEB0014671F /* GreetingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				3FFEED93278C06D40014671F /* LaunchScreen.storyboard */,
 				3FFEED96278C06D40014671F /* Info.plist */,
 				3FFEED9C278C09D30014671F /* Person.swift */,
+				3FFEED9E278C1FEB0014671F /* GreetingPresenter.swift */,
 			);
 			path = "MV(X)Patterns";
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FFEED8D278C06D20014671F /* ViewController.swift in Sources */,
+				3FFEED9F278C1FEB0014671F /* GreetingPresenter.swift in Sources */,
 				3FFEED89278C06D20014671F /* AppDelegate.swift in Sources */,
 				3FFEED9D278C09D30014671F /* Person.swift in Sources */,
 				3FFEED8B278C06D20014671F /* SceneDelegate.swift in Sources */,
