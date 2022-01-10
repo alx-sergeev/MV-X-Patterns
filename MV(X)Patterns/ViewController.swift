@@ -11,10 +11,16 @@ class ViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var tapLabel: UILabel!
     
+    // MARK: - Properties
+    private var person: Person!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        person = Person(name: "Tim", surname: "Cook")
     }
 
     @IBAction func showGreetingPressed() {
+        tapLabel.text = "Hello, \(person.fullName)!"
     }
 }
