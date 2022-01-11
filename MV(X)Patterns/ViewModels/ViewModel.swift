@@ -8,5 +8,18 @@
 import Foundation
 
 class ViewModel {
+    // MARK: - Properties
+    private let person = Person(name: "Tim", surname: "Cook")
     
+    var name: String {
+        person.name
+    }
+    
+    var surname: String {
+        person.surname
+    }
+    
+    var fullName: String {
+        person.fullName
+    }
 }

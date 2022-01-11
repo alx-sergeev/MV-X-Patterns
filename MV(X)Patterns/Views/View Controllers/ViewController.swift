@@ -12,12 +12,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var tapLabel: UILabel!
     
     // MARK: - Properties
-    private let viewModel = ViewModel()
+    private var viewModel: ViewModel! {
+        didSet {
+            self.tapLabel.text = "Hello, \(viewModel.fullName)!"
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     @IBAction func showGreetingPressed() {
+        viewModel = ViewModel()
     }
 }
