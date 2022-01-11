@@ -7,6 +7,24 @@
 
 import Foundation
 
-class ViewModel {
+protocol ViewModelProtocol: AnyObject {
+    var greeting: String? { get set }
+    var greetingDidChanged: ((ViewModelProtocol) -> ())? { get set }
+    func showGreeting()
+}
+
+class ViewModel: ViewModelProtocol {
+    // MARK: - Properties
+    private let person = Person(name: "Tim", surname: "Cook")
+    var greeting: String? {
+        didSet {
+            greetingDidChanged?(self)
+        }
+    }
+    var greetingDidChanged: ((ViewModelProtocol) -> ())?
     
+    // MARK: - Methods
+    func showGreeting() {
+        greeting = "Hello, \(person.fullName)!"
+    }
 }

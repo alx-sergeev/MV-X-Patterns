@@ -12,12 +12,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var tapLabel: UILabel!
     
     // MARK: - Properties
-    private let viewModel = ViewModel()
+    private var viewModel: ViewModelProtocol! {
+        didSet {
+            viewModel.greetingDidChanged = { [unowned self] viewModel in
+                self.tapLabel.text = viewModel.greeting
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        viewModel = ViewModel()
     }
 
     @IBAction func showGreetingPressed() {
+        viewModel.showGreeting()
     }
 }
