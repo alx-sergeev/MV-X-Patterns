@@ -11,6 +11,9 @@ class ViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var tapLabel: UILabel!
     
+    // MARK: - Properties
+    private let viewModel = ViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
