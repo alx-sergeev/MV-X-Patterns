@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GreetingViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var tapLabel: UILabel!
     
